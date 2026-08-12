@@ -1,27 +1,40 @@
 # HarnessYoung.github.io
 
-Personal portfolio site showcasing open-source projects in bioinformatics and agent tooling.
+Personal site listing open-source projects in bioinformatics and agent tooling.
 
-**Live site**: https://harnessyoung.github.io/
+**Live:** https://harnessyoung.github.io/
 
-## Structure
+## Design
 
-- Single-page portfolio with project cards
-- Dark/light mode auto-switching
-- Minimal, fast-loading design
-- Links directly to project documentation sites
+Single static page, no build step, no dependencies.
 
-## Projects featured
+- Left-right split hero: copy on the left, project cards on the right
+- Light base `#fbfbfc` with one forest-green accent `#0F7A52`
+- Dark mode via `prefers-color-scheme`; accent lightens to `#3FBF88` so it
+  clears WCAG AA on a dark base (7.89:1 measured)
+- Motion limited to card hover, button `:active`, and a one-shot entrance
+  stagger, all disabled under `prefers-reduced-motion`
+- Corner radii restricted to 6px (tags) / 9px (buttons) / 14px (cards)
 
-- [personal-skills](https://harnessyoung.github.io/personal-skills/) — version-controlled agent skills for Codex and Claude Code
+Design spec and implementation plan live in the
+[personal-skills](https://github.com/HarnessYoung/personal-skills) repo under
+`docs/specs/` and `docs/plans/`.
+
+## Adding a project
+
+Duplicate the `.project-card` block inside `.hero-right`. The hero holds at
+most two cards; beyond three projects, add an `ALL PROJECTS` grid section
+between the hero and About (see the plan document for the markup).
+
+Card meta shows language and last-updated month only. Skill counts are
+deliberately omitted so nothing goes stale.
 
 ## Local preview
 
 ```bash
-python3 -m http.server 8000
-open http://localhost:8000
+open index.html
 ```
 
 ## License
 
-Content © 2026 Yusheng Yang. Site code is public domain.
+Content © 2026 Yusheng Yang. Site markup and styles are public domain.
