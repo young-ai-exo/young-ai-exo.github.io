@@ -285,6 +285,48 @@ footer span{
   .top-nav{height:56px}
   h1{font-size:2.2rem}
 }
+
+/* Dark Mode */
+@media(prefers-color-scheme:dark){
+  body{background:#141418;color:#f4f4f6}
+
+  .top-nav{border-color:#2a2a32}
+  .logo,.nav-links a{color:#f4f4f6}
+  .nav-links a:hover{color:#3FBF88}
+
+  .eyebrow{color:#3FBF88}
+  .tagline{color:#9a9aa2}
+
+  .btn-primary{background:#3FBF88;color:#141418}
+  .btn-primary:hover{background:#50C998}
+  .btn-secondary{
+    background:#1a1a20;
+    color:#f4f4f6;
+    border-color:#2a2a32;
+  }
+  .btn-secondary:hover{border-color:#3FBF88}
+
+  .project-card{
+    background:#1a1a20;
+    border-color:#2a2a32;
+    color:#f4f4f6;
+  }
+  .project-card:hover{
+    border-color:#3FBF88;
+    background:#1c1c22;
+  }
+  .card-desc,.card-meta{color:#9a9aa2}
+  .tag{
+    background:rgba(63,191,136,.12);
+    color:#3FBF88;
+  }
+
+  .about p{color:#9a9aa2}
+
+  footer{border-color:#2a2a32}
+  footer span,.footer-links a{color:#9a9aa2}
+  .footer-links a:hover{color:#3FBF88}
+}
 </style>
 </head>
 <body>
