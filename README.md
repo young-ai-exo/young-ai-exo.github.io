@@ -1,8 +1,8 @@
-# HarnessYoung.github.io
+# young-ai-exo.github.io
 
 Personal site listing open-source projects in bioinformatics and agent tooling.
 
-**Live:** https://harnessyoung.github.io/
+**Live:** https://young-ai-exo.github.io/
 
 ## Design
 
@@ -17,7 +17,7 @@ Single static page, no build step, no dependencies.
 - Corner radii restricted to 6px (tags) / 9px (buttons) / 14px (cards)
 
 Design spec and implementation plan live in the
-[personal-skills](https://github.com/HarnessYoung/personal-skills) repo under
+[personal-skills](https://github.com/young-ai-exo/personal-skills) repo under
 `docs/specs/` and `docs/plans/`.
 
 ## Adding a project
